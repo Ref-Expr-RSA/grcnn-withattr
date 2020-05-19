@@ -11,44 +11,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/data/evaluation/sg/sg_eval.py">
+        <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/roi_heads.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/scene_parser/parser.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="113" column="25" selection-start-line="113" selection-start-column="25" selection-end-line="113" selection-end-column="25" />
+            <state relative-caret-position="760">
+              <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
               <folding>
-                <element signature="e#5591#5722#0" />
-                <element signature="e#5762#5889#0" />
+                <element signature="e#72#84#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/data/vg_hdf5.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/my_output_result.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="150" column="61" selection-start-line="150" selection-start-column="61" selection-end-line="150" selection-end-column="61" />
+            <state relative-caret-position="57">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/structures/image_list.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -56,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5156">
-              <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+            <state relative-caret-position="4180">
+              <caret line="220" column="39" selection-start-line="220" selection-start-column="39" selection-end-line="220" selection-end-column="39" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -65,44 +46,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/data/build.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/utils/visualize.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="64" column="60" lean-forward="true" selection-start-line="64" selection-start-column="60" selection-end-line="64" selection-end-column="60" />
+            <state relative-caret-position="1520">
+              <caret line="81" column="59" selection-start-line="81" selection-start-column="59" selection-end-line="81" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/data/evaluation/sg/evaluator.py">
+        <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/box_head.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1596">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/attr_predictor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="9" selection-end-column="59" />
+            <state relative-caret-position="1273">
+              <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
               <folding>
-                <element signature="e#0#20#0" expanded="true" />
+                <element signature="e#72#84#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
+        <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/inference.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="123" column="59" selection-start-line="123" selection-start-column="57" selection-end-line="123" selection-end-column="59" />
-              <folding>
-                <element signature="e#183#192#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="5301">
+              <caret line="286" column="51" selection-start-line="286" selection-start-column="43" selection-end-line="286" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -118,36 +87,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>img[</find>
-      <find>label</find>
-      <find>back</find>
-      <find>class</find>
-      <find>id_to_idx</find>
-      <find>obj_label</find>
-      <find>encoded_labels</find>
-      <find>print</find>
-      <find>['id_to_idx']</find>
-      <find>attri_data</find>
-      <find>create_dataset</find>
-      <find>20</find>
-      <find>10</find>
-      <find>print(</find>
-      <find>attr_predictor</find>
-      <find>cat</find>
-      <find>proposal</find>
-      <find>image</find>
-      <find>images</find>
-      <find>recall</find>
-      <find>_predicate_recall</find>
-      <find>_object_recall</find>
-      <find>object</find>
-      <find>imgs</find>
       <find>relation</find>
       <find>data</find>
       <find>im</find>
       <find>predicate</find>
-      <find>precision</find>
       <find>vgg-sgg</find>
+      <find>precision</find>
+      <find>attr_class_logits</find>
+      <find>rel_heads</find>
+      <find>attr_embedding</find>
+      <find>attr</find>
+      <find>args.</find>
+      <find>scene_parser</find>
+      <find>roi_heads</find>
+      <find>results_dict</find>
+      <find>sorted_inds</find>
+      <find>post_processor</find>
+      <find>idx</find>
+      <find>logit_nms</find>
+      <find>predictions</find>
+      <find>visualize</find>
+      <find>proposals</find>
+      <find>box_only</find>
+      <find>prediction</find>
+      <find>add_field(&quot;att&quot;</find>
+      <find>add_field(&quot;atts</find>
+      <find>print(att</find>
+      <find>attr_all</find>
+      <find>add_field(&quot;attr&quot;</find>
+      <find>print(</find>
+      <find>visual</find>
     </findStrings>
     <replaceStrings>
       <replace>atts</replace>
@@ -161,7 +130,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/lib/data/build.py" />
-        <option value="$PROJECT_DIR$/lib/data/evaluation/coco/coco_eval.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/workshop01.py" />
         <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/backbone/backbone.py" />
@@ -170,9 +138,7 @@
         <option value="$PROJECT_DIR$/create_roidb.sh" />
         <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/rpn/retinanet/loss.py" />
         <option value="$PROJECT_DIR$/lib/data/samplers/grouped_batch_sampler.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/rpn/rpn.py" />
-        <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/detector/generalized_rcnn.py" />
         <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/rpn/utils.py" />
         <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/backbone/resnet.py" />
         <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/structures/bounding_box.py" />
@@ -182,32 +148,41 @@
         <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/loss.py" />
         <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/utils/checkpoint.py" />
         <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/inference_with_attr.py" />
-        <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/inference.py" />
         <option value="$PROJECT_DIR$/lib/data/vg_hdf5.py" />
         <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/utils/visualize.py" />
         <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/relation_heads/loss.py" />
-        <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/relation_heads/relation_heads.py" />
         <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/poolers.py" />
         <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/roi_box_predictors.py" />
         <option value="$PROJECT_DIR$/workshop01-2.py" />
-        <option value="$PROJECT_DIR$/lib/my_output_result.py" />
         <option value="$PROJECT_DIR$/vg_to_roidb1.py" />
         <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/relation_heads/relpn/relpn.py" />
-        <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/box_head.py" />
-        <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/relation_heads/grcnn/grcnn.py" />
-        <option value="$PROJECT_DIR$/lib/scene_parser/parser.py" />
         <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/attr_predictor.py" />
         <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/relation_heads/atr_net.py" />
+        <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/relation_heads/grcnn/grcnn-with-attr.py" />
+        <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/relation_heads/relation_heads_with_attr.py" />
+        <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/relation_heads/relation_heads.py" />
+        <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/relation_heads/grcnn/grcnn.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/box_head_withattr.py" />
+        <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/detector/generalized_rcnn.py" />
+        <option value="$PROJECT_DIR$/lib/scene_parser/parser.py" />
+        <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/roi_heads.py" />
+        <option value="$PROJECT_DIR$/lib/data/evaluation/__init__.py" />
+        <option value="$PROJECT_DIR$/lib/data/evaluation/coco/coco_eval.py" />
         <option value="$PROJECT_DIR$/lib/model.py" />
+        <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/box_head.py" />
+        <option value="$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/inference.py" />
+        <option value="$PROJECT_DIR$/lib/my_output_result.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="160" />
+    <option name="y" value="190" />
     <option name="width" value="1245" />
     <option name="height" value="1010" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -238,6 +213,47 @@
               <item name="scene_parser" type="462c0819:PsiDirectoryNode" />
               <item name="rcnn" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="graph-rcnn.pytorch-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graph-rcnn.pytorch-master" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="scene_parser" type="462c0819:PsiDirectoryNode" />
+              <item name="rcnn" type="462c0819:PsiDirectoryNode" />
+              <item name="modeling" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graph-rcnn.pytorch-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graph-rcnn.pytorch-master" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="scene_parser" type="462c0819:PsiDirectoryNode" />
+              <item name="rcnn" type="462c0819:PsiDirectoryNode" />
+              <item name="modeling" type="462c0819:PsiDirectoryNode" />
+              <item name="detector" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graph-rcnn.pytorch-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graph-rcnn.pytorch-master" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="scene_parser" type="462c0819:PsiDirectoryNode" />
+              <item name="rcnn" type="462c0819:PsiDirectoryNode" />
+              <item name="modeling" type="462c0819:PsiDirectoryNode" />
+              <item name="roi_heads" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graph-rcnn.pytorch-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graph-rcnn.pytorch-master" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="scene_parser" type="462c0819:PsiDirectoryNode" />
+              <item name="rcnn" type="462c0819:PsiDirectoryNode" />
+              <item name="modeling" type="462c0819:PsiDirectoryNode" />
+              <item name="roi_heads" type="462c0819:PsiDirectoryNode" />
+              <item name="box_head" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graph-rcnn.pytorch-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graph-rcnn.pytorch-master" type="462c0819:PsiDirectoryNode" />
+              <item name="others" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -246,8 +262,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bottom-up-attention-master" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="PyFindUsagesOptions">
     <option name="isSearchForTextOccurrences" value="true" />
@@ -338,9 +355,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="840" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2628798" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="2" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.329927" />
+      <window_info anchor="bottom" id="Version Control" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.43211678" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15852048" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
@@ -358,26 +394,14 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+    </layout-to-restore>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="D:/" />
+    </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/relation_heads/inference.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="140" column="4" selection-start-line="140" selection-start-column="4" selection-end-line="140" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/relation_heads/loss1.py" />
-    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/box_head_noattr.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/inference_noattr.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/loss_noattr.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/roi_box_predictors_noattr.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -416,45 +440,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/data/evaluation/coco/coco_eval.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2832">
-          <caret line="297" column="27" lean-forward="true" selection-start-line="295" selection-start-column="12" selection-end-line="297" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/data/evaluation/coco/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/utils/visualize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="86" column="64" selection-start-line="86" selection-start-column="61" selection-end-line="86" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/-563521993/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
           <caret line="3704" column="8" selection-start-line="3704" selection-start-column="8" selection-end-line="3704" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/inference.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/detector/generalized_rcnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -479,27 +468,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/relation_heads/loss.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="286" column="48" selection-start-line="286" selection-start-column="48" selection-end-line="286" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/poolers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/relation_heads/relation_heads.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3565">
-          <caret line="202" column="4" selection-start-line="202" selection-start-column="4" selection-end-line="202" selection-end-column="4" />
-          <folding>
-            <element signature="e#186#204#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -514,13 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="1955" column="40" selection-start-line="1955" selection-start-column="34" selection-end-line="1955" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/roi_box_feature_extractors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -544,16 +509,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/workshop01-2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1235">
-          <caret line="79" column="12" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
-          <folding>
-            <element signature="e#1616#1635#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/workshop01-2.py" />
     <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/utils/checkpoint.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -561,62 +517,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vg_to_imdb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1881">
-          <caret line="105" column="26" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/data/evaluation/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/data/evaluation/sg/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/box_head_withattr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/my_output_result.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/vg_to_imdb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1919">
-          <caret line="107" column="13" selection-start-line="107" selection-start-column="12" selection-end-line="107" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vg_to_imdb.py" />
     <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/relation_heads/relpn/relpn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4997">
           <caret line="275" column="10" selection-start-line="275" selection-start-column="10" selection-end-line="275" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/roi_heads.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
-          <folding>
-            <element signature="e#72#84#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -630,48 +535,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/box_head.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="56" column="52" lean-forward="true" selection-start-line="56" selection-start-column="52" selection-end-line="56" selection-end-column="52" />
-          <folding>
-            <element signature="e#72#84#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/relation_heads/grcnn/grcnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="124" column="80" selection-start-line="124" selection-start-column="80" selection-end-line="124" selection-end-column="80" />
-          <folding>
-            <element signature="e#96#114#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/structures/image_list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
           <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/scene_parser/parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="113" column="25" selection-start-line="113" selection-start-column="25" selection-end-line="113" selection-end-column="25" />
-          <folding>
-            <element signature="e#5591#5722#0" />
-            <element signature="e#5762#5889#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/data/evaluation/sg/sg_eval.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -685,16 +552,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/data/evaluation/sg/evaluator.py">
+    <entry file="file://$PROJECT_DIR$/vg_to_roidb1.py" />
+    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/relation_heads/grcnn/grcnn-with-attr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1596">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="566">
+          <caret line="166" selection-start-line="166" selection-end-line="166" />
+          <folding>
+            <element signature="e#96#114#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/data/vg_hdf5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
+        <state relative-caret-position="2622">
           <caret line="150" column="61" selection-start-line="150" selection-start-column="61" selection-end-line="150" selection-end-column="61" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -702,37 +573,209 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/model.py">
+    <entry file="file://$PROJECT_DIR$/lib/data/build.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5156">
-          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+        <state relative-caret-position="1064">
+          <caret line="64" column="60" selection-start-line="64" selection-start-column="60" selection-end-line="64" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/relation_heads/relation_heads.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3534">
+          <caret line="202" column="22" selection-start-line="202" selection-start-column="22" selection-end-line="202" selection-end-column="22" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#186#204#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/relation_heads/loss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5415">
+          <caret line="297" column="41" selection-start-line="297" selection-start-column="37" selection-end-line="297" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/relation_heads/grcnn/grcnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1577">
+          <caret line="93" column="38" selection-start-line="93" selection-start-column="38" selection-end-line="93" selection-end-column="38" />
+          <folding>
+            <element signature="e#96#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/data/evaluation/sg/evaluator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="123" column="59" selection-start-line="123" selection-start-column="57" selection-end-line="123" selection-end-column="59" />
+        <state relative-caret-position="1292">
+          <caret line="68" column="41" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
           <folding>
             <element signature="e#183#192#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vg_to_roidb1.py">
+    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/relation_heads/relation_heads_with_attr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6676">
-          <caret line="383" column="39" lean-forward="true" selection-start-line="383" selection-start-column="39" selection-end-line="383" selection-end-column="39" />
+        <state relative-caret-position="632">
+          <caret line="215" selection-start-line="215" selection-end-line="215" />
+          <folding>
+            <element signature="e#186#204#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/data/build.py">
+    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/box_head_withattr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="64" column="60" lean-forward="true" selection-start-line="64" selection-start-column="60" selection-end-line="64" selection-end-column="60" />
+        <state relative-caret-position="357">
+          <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/utils/comm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="47" column="17" lean-forward="true" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/others/vg_to_roidb1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/scene_parser/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2983">
+          <caret line="169" column="48" selection-start-line="169" selection-start-column="48" selection-end-line="169" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/structures/keypoint.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/data/evaluation/coco/coco_eval.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/data/evaluation/coco/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/vg_to_imdb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="107" column="13" selection-start-line="107" selection-start-column="12" selection-end-line="107" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/detector/generalized_rcnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/roi_box_feature_extractors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="40" column="45" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/data/evaluation/sg/sg_eval.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-141">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/data/evaluation/sg/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/data/evaluation/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/roi_heads.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+          <folding>
+            <element signature="e#72#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4180">
+          <caret line="220" column="39" selection-start-line="220" selection-start-column="39" selection-end-line="220" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/utils/visualize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1520">
+          <caret line="81" column="59" selection-start-line="81" selection-start-column="59" selection-end-line="81" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/box_head.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1273">
+          <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
+          <folding>
+            <element signature="e#72#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/scene_parser/rcnn/modeling/roi_heads/box_head/inference.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5301">
+          <caret line="286" column="51" selection-start-line="286" selection-start-column="43" selection-end-line="286" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/my_output_result.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

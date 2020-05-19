@@ -58,7 +58,7 @@ class ROIBoxHead(torch.nn.Module):
         # final classifier that converts the features into predictions
         class_logits, box_regression,attr_logits = self.predictor(x)
         # class_logits, box_regression = self.predictor(x)
-
+        print(class_logits,attr_logits)
         boxes_per_image = [len(proposal) for proposal in proposals]
         features = x.split(boxes_per_image, dim=0)
         for proposal, feature in zip(proposals, features):

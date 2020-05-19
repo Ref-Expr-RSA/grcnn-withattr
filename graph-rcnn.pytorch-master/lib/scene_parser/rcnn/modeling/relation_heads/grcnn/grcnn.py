@@ -32,11 +32,11 @@ class GRCNN(nn.Module):
             nn.ReLU(True),
             nn.Linear(self.dim, self.dim),
         )
-        self.attr_embedding=nn.Sequential(
-            nn.Linear(self.pred_feature_extractor.out_channels, self.dim),
-            nn.ReLU(True),
-            nn.Linear(self.dim, self.dim),
-        )
+        # self.attr_embedding=nn.Sequential(
+        #     nn.Linear(self.pred_feature_extractor.out_channels, self.dim),
+        #     nn.ReLU(True),
+        #     nn.Linear(self.dim, self.dim),
+        # )
         self.rel_embedding = nn.Sequential(
             nn.Linear(self.pred_feature_extractor.out_channels, self.dim),
             nn.ReLU(True),
@@ -52,7 +52,7 @@ class GRCNN(nn.Module):
             self.gcn_update_score = _GraphConvolutionLayer_Update(num_classes_obj, num_classes_pred)
 
         self.obj_predictor = make_roi_relation_box_predictor(cfg, self.dim)
-        self.attr_predictor = attributePredictor(cfg, self.dim)
+        # self.attr_predictor = attributePredictor(cfg, self.dim)
         self.pred_predictor = make_roi_relation_predictor(cfg, self.dim)
 
     def _get_map_idxs(self, proposals, proposal_pairs):
@@ -90,7 +90,7 @@ class GRCNN(nn.Module):
         x_pred = x_pred.view(x_pred.size(0), -1);
         # x_attr = self.attr_embedding(x_pred)
         # wrong implementation
-        x_attr = self.attr_embedding(x_obj)
+        # x_attr = self.attr_embedding(x_obj)
         x_obj = self.obj_embedding(x_obj)
 
         x_pred = self.rel_embedding(x_pred)
@@ -117,12 +117,12 @@ class GRCNN(nn.Module):
 
 
         obj_class_logits = self.obj_predictor(obj_feats[-1].unsqueeze(2).unsqueeze(3))
-        if not self.training:
-            label_value= torch.argmax(obj_class_logits, dim=1)
-            # print(label_value)
-        else:
-            label_value=torch.cat([proposal.get_field("labels") for proposal in proposals], dim=0)
-        attr_logit= self.attr_predictor(x_attr.unsqueeze(2).unsqueeze(3),label_value)
+        # if not self.training:
+        #     label_value= torch.argmax(obj_class_logits, dim=1)
+        #     # print(label_value)
+        # else:
+        #     label_value=torch.cat([proposal.get_field("labels") for proposal in proposals], dim=0)
+        # attr_logit= self.attr_predictor(x_attr.unsqueeze(2).unsqueeze(3),label_value)
         # print(obj_class_logits.shape)
         pred_class_logits = self.pred_predictor(pred_feats[-1].unsqueeze(2).unsqueeze(3))
 
@@ -160,7 +160,8 @@ class GRCNN(nn.Module):
 
         # print(obj_class_logits.shape)
         # print(attr_logit.shape)
-        return (x_pred), obj_class_logits, pred_class_logits, obj_class_labels, rel_inds,attr_logit
+        return (x_pred), obj_class_logits, pred_class_logits, obj_class_labels, rel_inds
+        # return (x_pred), obj_class_logits, pred_class_logits, obj_class_labels, rel_inds,attr_logit
 
 def build_grcnn_model(cfg, in_channels):
     return GRCNN(cfg, in_channels)

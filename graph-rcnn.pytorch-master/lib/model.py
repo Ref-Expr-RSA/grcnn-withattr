@@ -15,6 +15,7 @@ from .scene_parser.rcnn.utils.visualize import select_top_predictions, overlay_b
 from .data.evaluation import evaluate, evaluate_sg
 from .utils.box import bbox_overlaps
 from lib.my_output_result import corresponding_obj_rel
+from lib.my_output_result import output_logits
 
 
 class SceneGraphGeneration:
@@ -237,6 +238,8 @@ class SceneGraphGeneration:
         self.scene_parser.eval()
         targets_dict = {}
         results_dict = {}
+        logits_dict={}
+        attr_logits_dict={}
         if self.cfg.MODEL.RELATION_ON:
             results_pred_dict = {}
         cpu_device = torch.device("cpu")
@@ -254,12 +257,14 @@ class SceneGraphGeneration:
             if i % 10 == 0:
                 logger.info("inference on batch {}/{}...".format(i, len(self.data_loader_test)))
                 small_count+=1
-                if small_count==5:
+                if small_count==2:
                     break
             with torch.no_grad():
                 if timer:
                     timer.tic()
-                output = self.scene_parser(imgs)
+                output,logits,attr_logits  = self.scene_parser(imgs)
+
+                # print(len(output[0][0]), len(logits[0]), len(attr_logits[0]))
                 # print(output)
                 if self.cfg.MODEL.RELATION_ON:
                     output, output_pred = output
@@ -278,6 +283,12 @@ class SceneGraphGeneration:
                     self.visualize_detection(self.data_loader_test.dataset, image_ids, imgs, output)
             results_dict.update(
                 {img_id: result for img_id, result in zip(image_ids, output)}
+            )
+            logits_dict.update(
+                {img_id: result for img_id, result in zip(image_ids, logits)}
+            )
+            attr_logits_dict.update(
+                {img_id: result for img_id, result in zip(image_ids, attr_logits )}
             )
 
             targets_dict.update(
@@ -306,9 +317,16 @@ class SceneGraphGeneration:
                 num_devices,
             )
         )
+
+        logits = self._accumulate_predictions_from_multiple_gpus(logits_dict)
         predictions = self._accumulate_predictions_from_multiple_gpus(results_dict)
+
+        attr_logits = self._accumulate_predictions_from_multiple_gpus(attr_logits_dict)
+        # print(len(predictions[0]),len(logits[0]))
+        # print('.............................................')
         if self.cfg.MODEL.RELATION_ON:
             predictions_pred = self._accumulate_predictions_from_multiple_gpus(results_pred_dict)
+        # print(predictions)
         if not is_main_process():
             return
 
@@ -330,7 +348,10 @@ class SceneGraphGeneration:
                                     predictions=predictions,
                                     output_folder=output_folder,
                                     **extra_args)
-        corresponding_obj_rel(self.data_loader_test.dataset,predictions, predictions_pred)
+        # print(predictions)
+        # print(logits)
+        corresponding_obj_rel(self.data_loader_test.dataset,predictions, predictions_pred,logits)
+        output_logits(self.data_loader_test.dataset,predictions, predictions_pred,logits,attr_logits)
         if self.cfg.MODEL.RELATION_ON:
             eval_sg_results = evaluate_sg(dataset=self.data_loader_test.dataset,
                                           predictions=predictions,

@@ -138,7 +138,7 @@ class ROIRelationHead(torch.nn.Module):
         else:
             # extract features that will be fed to the final classifier. The
             # feature_extractor generally corresponds to the pooler + heads
-            x, obj_class_logits, pred_class_logits, obj_class_labels, rel_inds ,attr_class_logits= \
+            x, obj_class_logits, pred_class_logits, obj_class_labels, rel_inds = \
                 self.rel_predictor(features, proposals, proposal_pairs)
 
             if self.use_bias:
@@ -176,8 +176,8 @@ class ROIRelationHead(torch.nn.Module):
         if obj_class_logits is not None:
             loss_obj_classifier = self.loss_evaluator.obj_classification_loss(proposals, [obj_class_logits])
             # print(loss_obj_classifier)
-        if attr_class_logits is not None:
-            loss_attr_classifier = self.loss_evaluator_attr.attr_classification_loss(proposals,[attr_class_logits])
+        # if attr_class_logits is not None:
+        #     loss_attr_classifier = self.loss_evaluator_attr.attr_classification_loss(proposals,[attr_class_logits])
             # print(loss_attr_classifier,'attr')
         if self.cfg.MODEL.USE_RELPN:
             loss_pred_classifier = self.relpn.pred_classification_loss([pred_class_logits])
@@ -187,7 +187,7 @@ class ROIRelationHead(torch.nn.Module):
                 proposal_pairs,
                 dict(loss_obj_classifier=loss_obj_classifier,
                      loss_relpn = loss_relpn,
-                     loss_attr_classifier=loss_attr_classifier,
+                     # loss_attr_classifier=loss_attr_classifier,
                      loss_pred_classifier=loss_pred_classifier),
             )
         else:
@@ -196,7 +196,7 @@ class ROIRelationHead(torch.nn.Module):
                 x,
                 proposal_pairs,
                 dict(loss_obj_classifier=loss_obj_classifier,
-                     loss_attr_classifier=loss_attr_classifier,
+                     # loss_attr_classifier=loss_attr_classifier,
                      loss_pred_classifier=loss_pred_classifier),
             )
 

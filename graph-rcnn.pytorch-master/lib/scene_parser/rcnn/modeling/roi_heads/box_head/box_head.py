@@ -47,17 +47,7 @@ class ROIBoxHead(torch.nn.Module):
 
         # extract features that will be fed to the final classifier. The
         # feature_extractor generally corresponds to the pooler + heads
-        # print(len(features))
-        # print(type(features[0]),type(features))
-        # print(features[0].shape)
-        # print(type(proposals),type(targets))
         x = self.feature_extractor(features, proposals)
-        # print(proposals[0].get_field('labels'))
-        # print(len(proposals))
-        # print(len(proposals[0]),len(proposals[1]))
-        # print(type(x))
-        # print(x.shape)
-        # print(len(x))
         # final classifier that converts the features into predictions
         class_logits, box_regression,  = self.predictor(x)
         label_value = None
@@ -79,12 +69,17 @@ class ROIBoxHead(torch.nn.Module):
         if not self.training:
             # if self.cfg.inference:
             # result = self.post_processor((class_logits, box_regression), proposals)
-            result = self.post_processor((class_logits, box_regression,attr_logits), proposals)
+            result,f_c,f_a = self.post_processor((class_logits, box_regression,attr_logits), proposals)
             # print('test....')
+            # print(type(f_c))
+            # f_c=torch.from_numpy(np.array(f_c))
+            # f_a=torch.from_numpy(np.array(f_a))
+            # print(sx(attr_logits))
             if targets:
-                # print('if targets...')
+                print('if targets...')
                 result = self.loss_evaluator.prepare_labels(result, targets)
-            return x, result, {}
+            # print(attr_logits.shape)
+            return x, result, f_c,f_a
             # else:
                 # return x, proposals, {}
 

@@ -88,7 +88,8 @@ class PostProcessor(nn.Module):
         num_atts=atts_prob.shape[1]
         attr_logits = attr_logits.split(boxes_per_image, dim=0)
         atts_prob = atts_prob.split(boxes_per_image, dim=0)
-
+        f_c_logit=[]
+        f_a_logit=[]
         results = []; idx = 0
         for prob, logit, boxes_per_img, features_per_img, image_shape,attr_per_img,atts_prob in zip(
             class_prob, class_logit, proposals, features, image_shapes,attr_logits,atts_prob
@@ -105,7 +106,7 @@ class PostProcessor(nn.Module):
                     boxlist_filtered = self.filter_results(boxlist, num_classes)
                 else:
                     # boxlist_pre = self.filter_results(boxlist, num_classes)
-                    boxlist_filtered = self.filter_results_nm(boxlist, num_classes,num_atts)
+                    boxlist_filtered,logit_nms,att_nms = self.filter_results_nm(boxlist, num_classes,num_atts)
                     # boxlist_filtered = self.filter_results_nm(boxlist, num_classes)
 
                     # to enforce minimum number of detections per image
@@ -134,7 +135,11 @@ class PostProcessor(nn.Module):
                 raise ValueError("boxlist shoud not be empty!")
 
             results.append(boxlist_filtered)
-        return results
+
+            sx = torch.nn.Softmax()
+            f_c_logit.append(sx(logit_nms))
+            f_a_logit.append(sx(att_nms))
+        return results,f_c_logit,f_a_logit
 
     def prepare_boxlist(self, boxes, features, scores, logits, image_shape,attr,atts_prob):
     # def prepare_boxlist(self, boxes, features, scores, logits, image_shape):
@@ -289,7 +294,6 @@ class PostProcessor(nn.Module):
         features_all = features[inds_all]
         logits_all = logits[inds_all]
         atts_all = labels_attr_pre[inds_all]
-
         box_inds_all = inds_all * scores.shape[1] + labels_all
         result = BoxList(boxlist.bbox.view(-1, 4)[box_inds_all], boxlist.size, mode="xyxy")
         result.add_field("labels", labels_all)
@@ -304,7 +308,10 @@ class PostProcessor(nn.Module):
         if self.detections_per_img < idx.size(0):
             idx = idx[:self.detections_per_img]
         result = result[idx]
-        return result
+        logit_nms=logits[idx]
+        att_nms=atts[idx]
+        # print(att_l[idx])
+        return result,logit_nms,att_nms
 
 def make_roi_box_post_processor(cfg):
     use_fpn = cfg.MODEL.ROI_HEADS.USE_FPN

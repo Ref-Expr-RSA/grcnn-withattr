@@ -121,12 +121,18 @@ class SceneParser(GeneralizedRCNN):
         #
 
         proposals, proposal_losses = self.rpn(images, features, targets)
-
+        logits={}
         scene_parser_losses = {}
         if self.roi_heads:
-            x, detections, roi_heads_loss = self.roi_heads(features, proposals, targets)
+            if self.training:
+                x, detections, roi_heads_loss = self.roi_heads(features, proposals, targets)
+            else:
+                roi_heads_loss={}
+                x, detections, logits ,attr_logits = self.roi_heads(features, proposals, targets)
+                # print(len(detections[0]), len(logits[0]), len(attr_logits[0]))
             # print(x.shape)
             result = detections
+            # print(result)
             scene_parser_losses.update(roi_heads_loss)
 
             if self.rel_heads:
@@ -153,6 +159,7 @@ class SceneParser(GeneralizedRCNN):
             result = proposals
             scene_parser_losses = {}
 
+
         if self.training:
             losses = {}
             losses.update(scene_parser_losses)
@@ -161,7 +168,7 @@ class SceneParser(GeneralizedRCNN):
 
         # NOTE: if object scores are updated in rel_heads, we need to ensure detections are updated accordingly
         # result = self._post_processing(result)
-        return result
+        return result,logits,attr_logits
 
 def get_save_dir(cfg):
     train_mode = "joint" if cfg.MODEL.WEIGHT_DET == "" else "step"
@@ -176,7 +183,7 @@ def get_save_dir(cfg):
         'BatchSize_{}'.format(cfg.DATASET.TRAIN_BATCH_SIZE),
         'Base_LR_{}'.format(cfg.SOLVER.BASE_LR),
         # '20attr'
-        '20attr_modified'
+        '20attr_rel_no_attr'
         )
     if not os.path.exists(os.path.join("checkpoints", outdir)):
         os.makedirs(os.path.join("checkpoints", outdir))

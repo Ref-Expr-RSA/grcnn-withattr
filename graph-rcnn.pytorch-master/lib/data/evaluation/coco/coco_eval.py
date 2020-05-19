@@ -232,6 +232,7 @@ def evaluate_box_proposals(
         # TODO maybe remove this and make it explicit in the documentation
         inds = prediction.get_field("objectness").sort(descending=True)[1]
         prediction = prediction[inds]
+        print(prediction)
 
         ann_ids = dataset.coco.getAnnIds(imgIds=original_id)
         anno = dataset.coco.loadAnns(ann_ids)
